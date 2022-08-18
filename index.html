@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="teams">
+            <h3>HOME</h3>
+            <span id="leader1">Leader</span>
+            <h1 class="points" id="home">0</h1>
+            <div class="add-points">
+                <button onclick="addOneH();testLeader()">+1</button>
+                <button onclick="addTwoH(),testLeader()">+2</button>
+                <button onclick="addThreeH(),testLeader()">+3</button>
+            </div>
+        </div>
+        <div class="new-time">
+            <button id="start-new" onclick="startNew(),countDown()">Start<br>New Game</button>
+            <span id="time">00:00</span>
+        </div>
+        <div class="teams">
+            <h3>GUEST</h3>
+            <span id="leader2">Leader</span>
+            <h1 class="points" id="guest">0</h1>
+            <div class="add-points">
+                <button onclick="addOneG(),testLeader()">+1</button>
+                <button onclick="addTwoG(),testLeader()">+2</button>
+                <button onclick="addThreeG(),testLeader()">+3</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
