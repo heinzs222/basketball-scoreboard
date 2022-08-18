@@ -31,8 +31,10 @@ function addThreeG() {
     guestPoints.textContent = gPoints;
 }
 function startNew() {
-    homePoints.textContent = "0";
-    guestPoints.textContent = "0";
+    hPoints = 0;
+    gPoints = 0;
+    homePoints.textContent = hPoints;
+    guestPoints.textContent = gPoints;
 }
 let leadOne = document.getElementById("leader1");
 leadOne.style.visibility = "hidden";
