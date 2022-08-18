@@ -45,8 +45,9 @@ function testLeader() {
     } else if (gPoints > hPoints) {
         leadTwo.style.visibility = "visible";
         leadOne.style.visibility = "hidden";
-    } else {
-        leadOne.style.visibility = "hidden";
-        leadTwo.style.visibility = "hidden";
     }
+}
+function hide() {
+    leadOne.style.visibility = "hidden";
+    leadTwo.style.visibility = "hidden";
 }
